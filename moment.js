@@ -557,7 +557,7 @@
         L: 'MM/DD/YYYY',
         LL: 'MMMM D, YYYY',
         LLL: 'MMMM D, YYYY h:mm A',
-        LLLL: 'dddd, MMMM D, YYYY h:mm A',
+        LLLL: 'dddd, DD MMMM',
     };
 
     function longDateFormat(key) {
