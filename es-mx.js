@@ -12,29 +12,29 @@
     //! moment.js locale configuration
 
     var monthsShortDot =
-            'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split(
+            'Ene._Feb._Mar._Abr._May._Jun._Jul._Ago._Sep._Oct._Nov._Dic.'.split(
                 '_'
             ),
-        monthsShort = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_'),
+        monthsShort = 'Ene_Feb_Mar_Abr_May_Jun_Jul_Ago_Sep_Oct_Nov_Dic'.split('_'),
         monthsParse = [
-            /^ene/i,
-            /^feb/i,
-            /^mar/i,
-            /^abr/i,
-            /^may/i,
-            /^jun/i,
-            /^jul/i,
-            /^ago/i,
-            /^sep/i,
-            /^oct/i,
-            /^nov/i,
-            /^dic/i,
+            /^Ene/i,
+            /^Feb/i,
+            /^Mar/i,
+            /^Abr/i,
+            /^May/i,
+            /^Jun/i,
+            /^Jul/i,
+            /^Ago/i,
+            /^Sep/i,
+            /^Oct/i,
+            /^Nov/i,
+            /^Dic/i,
         ],
         monthsRegex =
-            /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
+            /^(Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre|Ene\.?|Feb\.?|Mar\.?|Abr\.?|May\.?|Jun\.?|Jul\.?|Ago\.?|Sep\.?|Oct\.?|Nov\.?|Dic\.?)/i;
 
     var esMx = moment.defineLocale('es-mx', {
-        months: 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split(
+        months: 'Enero_Febrero_Marzo_Abril_Mayo_Junio_Julio_Agosto_Septiembre_Octubre_Noviembre_Diciembre'.split(
             '_'
         ),
         monthsShort: function (m, format) {
@@ -49,15 +49,15 @@
         monthsRegex: monthsRegex,
         monthsShortRegex: monthsRegex,
         monthsStrictRegex:
-            /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)/i,
+            /^(Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre)/i,
         monthsShortStrictRegex:
-            /^(ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i,
+            /^(Ene\.?|Feb\.?|Mar\.?|Abr\.?|May\.?|Jun\.?|Jul\.?|Ago\.?|Sep\.?|Oct\.?|Nov\.?|Dic\.?)/i,
         monthsParse: monthsParse,
         longMonthsParse: monthsParse,
         shortMonthsParse: monthsParse,
         weekdays: 'Domingo_Lunes_Martes_Miércoles_Jueves_Viernes_Sábado'.split('_'),
-        weekdaysShort: 'dom._lun._mar._mié._jue._vie._sáb.'.split('_'),
-        weekdaysMin: 'do_lu_ma_mi_ju_vi_sá'.split('_'),
+        weekdaysShort: 'Dom._Lun._Mar._Mié._Jue._Vie._Sáb.'.split('_'),
+        weekdaysMin: 'Do_Lu_Ma_Mi_Ju_Vi_Sá'.split('_'),
         weekdaysParseExact: true,
         longDateFormat: {
             LT: 'H:mm',
@@ -66,6 +66,7 @@
             LL: 'D [de] MMMM [de] YYYY',
             LLL: 'D [de] MMMM [de] YYYY H:mm',
             LLLL: 'dddd, D [de] MMMM [de] YYYY H:mm',
+            LLLS: 'dddd, DD [de] MMMM',
         },
         calendar: {
             sameDay: function () {
